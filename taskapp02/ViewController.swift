@@ -41,6 +41,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: UITableViewDelegateプロトコルのメソッド
     // 各セルを選択した時に実行されるメソッド
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("cellSegue",sender: nil)
     }
     
     // セルが削除が可能なことを伝えるメソッド
