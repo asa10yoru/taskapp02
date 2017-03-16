@@ -13,6 +13,7 @@
 		330822281E796F7600C3B0E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330822271E796F7600C3B0E3 /* Assets.xcassets */; };
 		3308222B1E796F7600C3B0E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330822291E796F7600C3B0E3 /* LaunchScreen.storyboard */; };
 		330822331E7974F900C3B0E3 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330822321E7974F900C3B0E3 /* InputViewController.swift */; };
+		33F54DCE1E7AD06F00F216A7 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F54DCD1E7AD06F00F216A7 /* Task.swift */; };
 		727A78205AB987C53FD5CA2F /* Pods_taskapp02.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B3B697156AE6F2D13862F51 /* Pods_taskapp02.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		3308222A1E796F7600C3B0E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3308222C1E796F7600C3B0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		330822321E7974F900C3B0E3 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		33F54DCD1E7AD06F00F216A7 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				330822271E796F7600C3B0E3 /* Assets.xcassets */,
 				330822291E796F7600C3B0E3 /* LaunchScreen.storyboard */,
 				3308222C1E796F7600C3B0E3 /* Info.plist */,
+				33F54DCD1E7AD06F00F216A7 /* Task.swift */,
 			);
 			path = taskapp02;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F54DCE1E7AD06F00F216A7 /* Task.swift in Sources */,
 				330822331E7974F900C3B0E3 /* InputViewController.swift in Sources */,
 				330822231E796F7600C3B0E3 /* ViewController.swift in Sources */,
 				330822211E796F7600C3B0E3 /* AppDelegate.swift in Sources */,
@@ -367,6 +371,7 @@
 				330822311E796F7600C3B0E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
