@@ -9,9 +9,10 @@
 import UIKit
 import RealmSwift
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource , UISearchBarDelegate{
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var mySearchBar: UISearchBar!
 
     // Realmインスタンスを取得する
     let realm = try! Realm()
@@ -26,6 +27,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
+        mySearchBar.delegate = self
+        mySearchBar.placeholder = "カテゴリを入力してください"
+        mySearchBar.showsCancelButton = true
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,6 +42,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // データの数（＝セルの数）を返すメソッド
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return taskArray.count
+    }
+
+    // カテゴリ
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        taskArray = realm.objects(Task.self).filter("category contains %@", mySearchBar.text)
     }
     
     // 各セルの内容を返すメソッド

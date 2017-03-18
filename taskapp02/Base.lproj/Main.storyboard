@@ -73,6 +73,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mySearchBar" destination="PWP-tO-To9" id="gGw-f6-16r"/>
                         <outlet property="tableView" destination="JN6-uI-vrm" id="Ywd-MO-NtO"/>
                         <segue destination="fAT-Kf-Cij" kind="show" identifier="cellSegue" id="afd-7p-VKq"/>
                     </connections>
