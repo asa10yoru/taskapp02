@@ -48,6 +48,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // カテゴリ
     func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
         taskArray = realm.objects(Task.self).filter("category contains %@", mySearchBar.text!)
+        tableView.reloadData()
+
     }
     
     // 各セルの内容を返すメソッド
