@@ -30,7 +30,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         mySearchBar.delegate = self
         mySearchBar.placeholder = "カテゴリを入力してください"
-        mySearchBar.showsCancelButton = true
         
     }
 
